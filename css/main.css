@@ -213,9 +213,13 @@ h2.h2 {
   margin-bottom: 30px; }
 
 .catalog {
-  background: url("../images/grey1.png") no-repeat;
+  background: url("../images/red1.png") no-repeat;
   background-size: 100%;
   background-position: center; }
+  .catalog:hover {
+    background: url("../images/grey1.png") no-repeat;
+    background-size: 100%;
+    background-position: center; }
 
 .sales {
   background: url("../images/red2.png") no-repeat;
