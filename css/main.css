@@ -1,0 +1,294 @@
+/* global style */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+div.container {
+  min-width: 1000px; }
+
+h1.h1, h2.h2, h3.h3, h4.h4, h5.h5, h6.h6 {
+  font-family: 'robotobold';
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  min-width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+  color: #77787B;
+  font-size: 16px;
+  font-family: 'robotoregular'; }
+
+.main .four-icon a {
+  color: #77787B; }
+  .main .four-icon a:hover {
+    text-decoration: none;
+    color: #77787B; }
+
+/* header style */
+.header {
+  overflow: hidden; }
+
+input.nav-input {
+  background: #F8F8F8 url("../images/search.png") no-repeat;
+  background-position: 98% center;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  height: 42px;
+  border: none;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  margin-top: 20px;
+  padding: 0 15px;
+  cursor: inherit;
+  position: relative;
+  width: 100%; }
+
+h1.number-h1 {
+  text-align: justify;
+  font-size: 24px;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  letter-spacing: 1.7px;
+  color: #E4042A; }
+
+/* nav menu */
+.nav-ul, .bascet {
+  position: relative;
+  margin-top: 25px; }
+
+.nav-list {
+  display: inline-block;
+  padding: 0 15px 2px;
+  border-right: 1px solid; }
+
+.nav-link {
+  color: #7D7E81;
+  font-size: 17px; }
+  .nav-link:hover {
+    color: #111111;
+    -webkit-transition: .3s;
+    transition: .3s;
+    text-decoration: none; }
+
+.nav-list:first-child {
+  padding-left: 0; }
+
+.nav-list:last-child {
+  border: none; }
+
+.bascet li {
+  display: inline-block;
+  padding-left: 35px; }
+  .bascet li a {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: #E4042A;
+    position: relative; }
+    .bascet li a:hover {
+      color: #111;
+      text-decoration: none; }
+
+.bascet li a::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 21px;
+  position: absolute;
+  background: url("../images/bascet.png") no-repeat;
+  left: -25px;
+  top: -3px; }
+
+.bascet li .heart-icon::before {
+  background: url("../images/heart.png") no-repeat; }
+
+.bascet li .heart-icon:hover::before {
+  background: url("../images/heart-black.png") no-repeat; }
+
+.bascet li .bsc-icon:hover::before {
+  background: url("../images/bascet-black.png") no-repeat; }
+
+/* end header */
+/* Main style */
+/* Slider */
+.sl {
+  margin-top: 20px; }
+
+div.sl-slide {
+  width: 100%;
+  height: 500px;
+  background: url("../images/slide1.jpg") no-repeat;
+  background-size: cover; }
+
+.container.delete-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+button.slick-prev {
+  z-index: 10;
+  left: 15px;
+  width: 60px;
+  height: 100%; }
+  button.slick-prev::before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 61px;
+    background: url("../images/sl-prev.png") no-repeat; }
+
+button.slick-next {
+  z-index: 10;
+  right: -47px;
+  width: 100px;
+  height: 100%; }
+  button.slick-next::before {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 61px;
+    background: url("../images/sl-next.png") no-repeat; }
+
+ul.slick-dots li button:before {
+  font-size: 14px; }
+
+ul.slick-dots {
+  margin: -10px 0; }
+
+ul.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ED1A37; }
+
+.red-block {
+  background-color: #E4042A;
+  width: 510px;
+  margin-left: 20px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 20px; }
+  .red-block a {
+    color: #fff;
+    font-size: 15px;
+    padding-right: 10px; }
+    .red-block a:hover {
+      text-decoration: none;
+      color: #fff; }
+  .red-block span {
+    color: #fff; }
+
+.after-heart {
+  position: relative; }
+
+.after-heart::after {
+  width: 20px;
+  height: 17px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: -28px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background: url("../images/heart1.png"); }
+
+.after-heart:hover::after {
+  background: url("../images/heart2.png"); }
+
+.red-block:hover a {
+  color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  /* end slider */
+  /* four icon grey-red */ }
+
+h2.h2 {
+  font-size: 20px;
+  margin-top: 30px; }
+
+.icon {
+  width: 100%;
+  height: 186px;
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.catalog {
+  background: url("../images/grey1.png") no-repeat;
+  background-size: 100%;
+  background-position: center; }
+
+.sales {
+  background: url("../images/red2.png") no-repeat;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-size: 100%;
+  background-position: center; }
+  .sales:hover {
+    background: url("../images/grey2.png") no-repeat;
+    background-size: 100%;
+    background-position: center; }
+
+.disign {
+  background: url("../images/red3.png") no-repeat;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-size: 100%;
+  background-position: center; }
+  .disign:hover {
+    background: url("../images/grey3.png") no-repeat;
+    background-size: 100%;
+    background-position: center; }
+
+.location {
+  background: url("../images/red4.png") no-repeat;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background-size: 100%;
+  background-position: center; }
+  .location:hover {
+    background: url("../images/grey4.png") no-repeat;
+    background-size: 100%;
+    background-position: center; }
+
+/* main text */
+.main-text {
+  padding: 10px 0 30px; }
+
+h3.h3.main-text-h3 {
+  font-size: 20px; }
+
+.main-prg {
+  font-size: 16px;
+  width: 90%;
+  line-height: 20px;
+  padding-bottom: 25px; }
+
+/* footer style */
+.footer div.container {
+  background-color: #E6E7E8;
+  padding: 22px 20px; }
+
+.second-footer-ul {
+  padding-left: 30px; }
+
+div ul.footer-ul {
+  line-height: 22px; }
+  div ul.footer-ul li a {
+    color: #77787B; }
+    div ul.footer-ul li a:hover {
+      color: #030303;
+      text-decoration: none; }
+
+.copyright {
+  padding: 25px 0 5px; }
+
+.third-ul-ftr {
+  margin-right: 100px; }
+
+/* some style */
+body {
+  min-width: 1024px !important;
+  margin: auto; }
+
+.container-fluid, .container {
+  min-width: 1024px !important; }
