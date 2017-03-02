@@ -165,42 +165,35 @@ ul.slick-dots li.slick-active button:before {
   margin-left: 20px;
   height: 37px;
   line-height: 37px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  position: relative; }
   .red-block a {
     color: #fff;
     font-size: 15px;
     padding-right: 10px; }
-    .red-block a:hover {
-      text-decoration: none;
-      color: #fff; }
   .red-block span {
     color: #fff; }
+
+.red-block:hover .tile-link {
+  color: #000;
+  text-decoration: none; }
 
 .after-heart {
   position: relative; }
 
-.after-heart::after {
+.heart {
   width: 20px;
   height: 17px;
-  display: block;
-  content: '';
   position: absolute;
-  top: 3px;
-  right: -28px;
+  top: 10px;
+  right: 10px;
+  display: block;
   cursor: pointer;
-  -webkit-transition: .2s;
-  transition: .2s;
-  background: url("../images/heart1.png"); }
-
-.after-heart:hover::after {
-  background: url("../images/heart2.png"); }
-
-.red-block:hover a {
-  color: #000;
-  -webkit-transition: .3s;
-  transition: .3s;
+  background: url("../images/heart1.png") no-repeat;
   /* end slider */
-  /* four icon grey-red */ }
+  /* four icon greyred */ }
+  .heart:hover {
+    background: url("../images/heart2.png") no-repeat; }
 
 h2.h2 {
   font-size: 20px;
@@ -208,8 +201,8 @@ h2.h2 {
 
 .icon {
   width: 100%;
-  height: 186px;
-  margin-top: 10px;
+  height: 174px;
+  margin-top: 0;
   margin-bottom: 30px; }
 
 .catalog {
@@ -259,7 +252,8 @@ h2.h2 {
   padding: 10px 0 30px; }
 
 h3.h3.main-text-h3 {
-  font-size: 20px; }
+  font-size: 20px;
+  padding-bottom: 15px; }
 
 .main-prg {
   font-size: 16px;
