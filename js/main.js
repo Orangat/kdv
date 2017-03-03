@@ -10,12 +10,34 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$('#ex1').zoom();
-	$('#ex2').zoom();
-	$('#ex3').zoom();
-	$('#ex4').zoom();
-	$('#ex5').zoom();
+	$('#ex1').zoom({ on:'click' });
+	$('#ex2').zoom({ on:'click' });
+	$('#ex3').zoom({ on:'click' });
+	$('#ex4').zoom({ on:'click' });
+	$('#ex5').zoom({ on:'click' });
 });
+
+// $(document).ready(function() {
+//   $('.number-h1').click(function() {
+//     $('.number-h1').addClass('zoom-out');
+//   });
+//   $('.number-h1').click(function() {
+//     $('.number-h1').addClass('zoom-in');
+//   });
+// });
+
+// $(document).ready(function(){
+// 	var zoom = $('.zoom-in')
+// 	if (zoom.css('cursor')=='zoom-in'); {
+// 		$('.zoom-in').click(function() {
+// 			$zoom.css('cursor, zoom-out')
+// 		})
+// 		else {
+// 			$zoom.css('cursor, zoom-in');
+// 		}
+// 	}
+// });
+
 
 
   

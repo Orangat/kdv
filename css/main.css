@@ -43,36 +43,45 @@ input.nav-input {
   padding: 0 15px;
   cursor: inherit;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s; }
+  input.nav-input:hover {
+    border-color: #1183C6; }
 
 h1.number-h1 {
-  text-align: justify;
   font-size: 24px;
   margin-top: 16px;
   padding-bottom: 4px;
-  letter-spacing: 1.7px;
   color: #E4042A; }
 
+.nmb-prg {
+  font-size: 14px; }
+
 /* nav menu */
+.block-search {
+  position: absolute;
+  width: 520px; }
+
 .nav-ul, .bascet {
   position: relative;
   margin-top: 25px; }
 
 .nav-list {
   display: inline-block;
-  padding: 0 15px 2px;
   border-right: 1px solid; }
 
 .nav-link {
   color: #7D7E81;
-  font-size: 17px; }
+  font-size: 17px;
+  padding: 3px 13px 3px 9px; }
   .nav-link:hover {
     color: #111111;
     -webkit-transition: .3s;
     transition: .3s;
     text-decoration: none; }
 
-.nav-list:first-child {
+.del-pdn-left {
   padding-left: 0; }
 
 .nav-list:last-child {
@@ -93,12 +102,12 @@ h1.number-h1 {
 .bascet li a::before {
   content: '';
   display: block;
-  width: 25px;
-  height: 21px;
+  width: 54px;
+  height: 33px;
   position: absolute;
   background: url("../images/bascet.png") no-repeat;
   left: -25px;
-  top: -3px; }
+  top: -5px; }
 
 .bascet li .heart-icon::before {
   background: url("../images/heart.png") no-repeat; }
@@ -171,7 +180,14 @@ ul.slick-dots li.slick-active button:before {
   .red-block a {
     color: #fff;
     font-size: 15px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    position: absolute;
+    outline: none;
+    padding-right: 230px; }
+    .red-block a:focus {
+      outline: none;
+      text-decoration: none;
+      color: #000; }
   .red-block span {
     color: #fff; }
 
@@ -183,16 +199,18 @@ ul.slick-dots li.slick-active button:before {
   position: relative; }
 
 .heart {
-  width: 20px;
-  height: 17px;
+  width: 41px;
+  height: 38px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 494px;
   display: block;
   cursor: pointer;
-  background: url("../images/heart1.png") no-repeat; }
+  background: url("../images/heart1.png") no-repeat;
+  background-position: center; }
   .heart:hover {
-    background: url("../images/heart2.png") no-repeat; }
+    background: url("../images/heart2.png") no-repeat;
+    background-position: center; }
 
 .zoom-img {
   width: 47px;
@@ -214,12 +232,21 @@ ul.slick-dots li.slick-active button:before {
   position: relative; }
 
 .zoom img::-moz-selection {
-  background-color: transparent;
-  /* end slider */
-  /* four icon greyred */ }
+  background-color: transparent; }
 
 .zoom img::selection {
-  background-color: transparent;
+  background-color: transparent; }
+
+.red-block-span {
+  padding-left: 228px;
+  cursor: pointer; }
+
+.after-heart {
+  cursor: pointer; }
+
+.zoom img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
   /* end slider */
   /* four icon greyred */ }
 
@@ -237,10 +264,11 @@ h2.h2 {
   background: url("../images/red1.png") no-repeat;
   background-size: 100%;
   background-position: center; }
-  .catalog:hover {
-    background: url("../images/grey1.png") no-repeat;
-    background-size: 100%;
-    background-position: center; }
+
+.icon-link:hover .catalog {
+  background: url("../images/grey1.png") no-repeat;
+  background-size: 100%;
+  background-position: center; }
 
 .sales {
   background: url("../images/red2.png") no-repeat;
@@ -248,10 +276,11 @@ h2.h2 {
   transition: .2s;
   background-size: 100%;
   background-position: center; }
-  .sales:hover {
-    background: url("../images/grey2.png") no-repeat;
-    background-size: 100%;
-    background-position: center; }
+
+.icon-link:hover .sales {
+  background: url("../images/grey2.png") no-repeat;
+  background-size: 100%;
+  background-position: center; }
 
 .disign {
   background: url("../images/red3.png") no-repeat;
@@ -259,10 +288,11 @@ h2.h2 {
   transition: .2s;
   background-size: 100%;
   background-position: center; }
-  .disign:hover {
-    background: url("../images/grey3.png") no-repeat;
-    background-size: 100%;
-    background-position: center; }
+
+.icon-link:hover .disign {
+  background: url("../images/grey3.png") no-repeat;
+  background-size: 100%;
+  background-position: center; }
 
 .location {
   background: url("../images/red4.png") no-repeat;
@@ -270,10 +300,11 @@ h2.h2 {
   transition: .2s;
   background-size: 100%;
   background-position: center; }
-  .location:hover {
-    background: url("../images/grey4.png") no-repeat;
-    background-size: 100%;
-    background-position: center; }
+
+.icon-link:hover .location {
+  background: url("../images/grey4.png") no-repeat;
+  background-size: 100%;
+  background-position: center; }
 
 /* main text */
 .main-text {
