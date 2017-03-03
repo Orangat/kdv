@@ -113,13 +113,13 @@ h1.number-h1 {
 /* Main style */
 /* Slider */
 .sl {
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
 
 div.sl-slide {
   width: 100%;
   height: 500px;
-  background: url("../images/slide1.jpg") no-repeat;
-  background-size: cover; }
+  position: relative; }
 
 .container.delete-padding {
   padding-left: 0;
@@ -166,7 +166,8 @@ ul.slick-dots li.slick-active button:before {
   height: 37px;
   line-height: 37px;
   padding-left: 20px;
-  position: relative; }
+  position: absolute;
+  top: 0; }
   .red-block a {
     color: #fff;
     font-size: 15px;
@@ -189,11 +190,38 @@ ul.slick-dots li.slick-active button:before {
   right: 10px;
   display: block;
   cursor: pointer;
-  background: url("../images/heart1.png") no-repeat;
-  /* end slider */
-  /* four icon greyred */ }
+  background: url("../images/heart1.png") no-repeat; }
   .heart:hover {
     background: url("../images/heart2.png") no-repeat; }
+
+.zoom-img {
+  width: 47px;
+  height: 48px;
+  position: absolute;
+  bottom: 40px;
+  left: 54%;
+  background: url("../images/lupa-plus.png") no-repeat;
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.sl-slide:hover .zoom-img {
+  opacity: 0; }
+
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+  display: inline-block;
+  position: relative; }
+
+.zoom img::-moz-selection {
+  background-color: transparent;
+  /* end slider */
+  /* four icon greyred */ }
+
+.zoom img::selection {
+  background-color: transparent;
+  /* end slider */
+  /* four icon greyred */ }
 
 h2.h2 {
   font-size: 20px;
@@ -270,7 +298,8 @@ h3.h3.main-text-h3 {
   padding-left: 30px; }
 
 div ul.footer-ul {
-  line-height: 22px; }
+  line-height: 22px;
+  font-size: 15px; }
   div ul.footer-ul li a {
     color: #77787B; }
     div ul.footer-ul li a:hover {

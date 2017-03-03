@@ -9,6 +9,13 @@ $(document).ready(function(){
 	
 });
 
+$(document).ready(function(){
+	$('#ex1').zoom();
+	$('#ex2').zoom();
+	$('#ex3').zoom();
+	$('#ex4').zoom();
+	$('#ex5').zoom();
+});
 
 
   
