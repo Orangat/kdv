@@ -17,26 +17,18 @@ $(document).ready(function(){
 	$('#ex5').zoom({ on:'click' });
 });
 
-// $(document).ready(function() {
-//   $('.number-h1').click(function() {
-//     $('.number-h1').addClass('zoom-out');
-//   });
-//   $('.number-h1').click(function() {
-//     $('.number-h1').addClass('zoom-in');
-//   });
-// });
+$(document).ready(function() {
+	var elem = $(".zoom");
+	elem.on("click", function() {
+		if (elem.css("cursor") == "zoom-in") {
+			elem.css("cursor", "zoom-out");
+		} else {
+			elem.css("cursor", "zoom-in");
+		}
+	});
+})
 
-// $(document).ready(function(){
-// 	var zoom = $('.zoom-in')
-// 	if (zoom.css('cursor')=='zoom-in'); {
-// 		$('.zoom-in').click(function() {
-// 			$zoom.css('cursor, zoom-out')
-// 		})
-// 		else {
-// 			$zoom.css('cursor, zoom-in');
-// 		}
-// 	}
-// });
+
 
 
 

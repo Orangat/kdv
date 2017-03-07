@@ -244,7 +244,7 @@ ul.slick-dots li.slick-active button:before {
 .after-heart {
   cursor: pointer; }
 
-.zoom img {
+.zoom {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
   /* end slider */
