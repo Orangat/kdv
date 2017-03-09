@@ -357,7 +357,7 @@ body {
   margin: auto; }
 
 .container-fluid, .container {
-  min-width: 1024px !important; }
+  min-width: 1000px !important; }
 
 .del-pdn-left {
   padding-left: 0; }
@@ -394,7 +394,71 @@ a span.red-text-dlv {
   font-weight: 900; }
 
 .map-dlv {
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  position: relative; }
+
+.bable {
+  width: 335px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #5B626A;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 7px 15px 1px 0px rgba(71, 77, 83, 0.4);
+          box-shadow: 7px 15px 1px 0px rgba(71, 77, 83, 0.4);
+  position: absolute;
+  top: -350px;
+  right: 100px; }
+  .bable::after {
+    content: '';
+    display: block;
+    width: 57px;
+    height: 53px;
+    position: absolute;
+    bottom: -53px;
+    left: 20px;
+    background: url("../images/bable.png") no-repeat; }
+
+.close-bbl {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/cls-bable.png") no-repeat;
+  position: absolute;
+  top: 7px;
+  right: 7px; }
+
+.wrap-bable {
+  position: relative;
+  display: none; }
+
+.bable {
+  padding: 20px; }
+  .bable .h2 {
+    margin-top: 0px;
+    padding-bottom: 15px; }
+
+.bbl-p {
+  line-height: 30px; }
+
+.bbl-input {
+  float: left;
+  width: 45px;
+  margin-left: 10px;
+  text-align: right;
+  padding: 0 5px;
+  margin-right: 5px; }
+
+.sup-text {
+  font-size: 12px; }
+
+.bbl-few-block {
+  width: 30%;
+  font-size: 15px;
+  margin-top: 20px; }
+
+.fix-pdn-bbl {
+  width: 40%; }
 
 .italic-text {
   font-style: italic;

@@ -17,6 +17,18 @@ $(document).ready(function(){
 	$('#ex5').zoom({ on:'click' });
 });
 
+
+$(document).ready(function(){
+	$('.map-dlv').click(function() {
+		$('.wrap-bable').slideDown('fast');
+	});
+	$('.close-bbl').click(function() {
+		$('.wrap-bable').slideUp('fast');
+	});
+
+});
+
+
 $(document).ready(function() {
 	var elem = $(".zoom");
 	elem.on("click", function() {
