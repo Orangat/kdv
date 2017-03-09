@@ -56,7 +56,7 @@ input.nav-input {
   position: absolute;
   top: 62px;
   left: 598px;
-  padding: 12px;
+  padding: 12px 0;
   -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.34);
           box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.34);
   z-index: 1;
@@ -66,10 +66,17 @@ input.nav-input {
     color: #E61639; }
     .tips-block a:hover {
       text-decoration: none;
-      color: #E61639; }
+      color: #000; }
     .tips-block a:focus {
       text-decoration: none;
-      color: #E61639; }
+      color: #000; }
+  .tips-block p {
+    padding: 0 12px; }
+  .tips-block ul li a {
+    padding: 0 12px; }
+  .tips-block ul li:hover {
+    color: #000;
+    background: #F4F6F7; }
 
 .link-close {
   position: absolute;
@@ -268,17 +275,6 @@ ul.slick-dots li.slick-active button:before {
   .heart:hover {
     background: url("../images/heart2.png") no-repeat;
     background-position: center; }
-
-.zoom-img {
-  width: 47px;
-  height: 48px;
-  position: absolute;
-  bottom: 40px;
-  left: 54%;
-  background: url("../images/lupa-plus.png") no-repeat;
-  opacity: 1;
-  -webkit-transition: .3s;
-  transition: .3s; }
 
 .sl-slide:hover .zoom-img {
   opacity: 0; }
