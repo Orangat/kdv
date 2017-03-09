@@ -2,6 +2,6 @@
   div.container {
     width: 100%; }
   .footer div.container {
-    width: 86%; }
+    max-width: 1440px; }
   .block-search {
     width: 100%; } }
