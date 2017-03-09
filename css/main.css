@@ -436,18 +436,22 @@ a span.red-text-dlv {
   padding: 20px; }
   .bable .h2 {
     margin-top: 0px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-size: 'robotobold'; }
 
 .bbl-p {
-  line-height: 30px; }
+  line-height: 33px; }
 
 .bbl-input {
   float: left;
   width: 45px;
   margin-left: 10px;
   text-align: right;
-  padding: 0 5px;
-  margin-right: 5px; }
+  padding: 5px 5px;
+  margin-right: 5px;
+  border: none;
+  border: 1px solid #dce1e5;
+  border-top: 1px solid #B4B8B7; }
 
 .sup-text {
   font-size: 12px; }
@@ -456,6 +460,8 @@ a span.red-text-dlv {
   width: 30%;
   font-size: 15px;
   margin-top: 20px; }
+  .bbl-few-block h4 {
+    font-family: 'robotobold'; }
 
 .fix-pdn-bbl {
   width: 40%; }
