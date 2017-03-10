@@ -642,7 +642,8 @@ div.child {
     color: #000;
     text-decoration: none; }
   .adr-link:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000; }
 
 .map-contact {
   margin-bottom: 90px; }
